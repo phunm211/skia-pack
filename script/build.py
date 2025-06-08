@@ -98,6 +98,7 @@ def main():
     args += [
       'ndk="'+ ndk + '"',
       'skia_use_gl=true',
+      'skia_use_egl=true',
       'skia_enable_gpu=true',
       'skia_use_freetype=true',
       'is_trivial_abi=false'
