@@ -23,7 +23,7 @@ def main():
   if build_type == 'Debug':
     args = ['is_debug=true']
   else:
-    args = ['is_official_build=true']
+    args = ['is_official_build=false']
 
   args += [
     'target_cpu="' + machine + '"',
@@ -100,6 +100,7 @@ def main():
       'skia_use_gl=true',
       'skia_enable_gpu=true',
       'skia_use_freetype=true',
+      'is_trivial_abi=false'
     ]
   elif 'wasm' == target:
     # brew install emscripten binaryen llvm nodejs
