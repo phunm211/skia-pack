@@ -101,7 +101,7 @@ def main():
       'skia_use_egl=true',
       'skia_enable_gpu=true',
       'skia_use_freetype=true',
-      'is_trivial_abi=false'
+      'is_trivial_abi=false',
       'skia_use_cfi=true'
     ]
   elif 'wasm' == target:
