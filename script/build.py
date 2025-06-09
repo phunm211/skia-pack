@@ -102,6 +102,7 @@ def main():
       'skia_enable_gpu=true',
       'skia_use_freetype=true',
       'is_trivial_abi=false'
+      'skia_use_cfi=true'
     ]
   elif 'wasm' == target:
     # brew install emscripten binaryen llvm nodejs
