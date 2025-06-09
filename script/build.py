@@ -34,10 +34,7 @@ def main():
     'skia_use_system_zlib=false',
     'skia_use_sfntly=false',
     'skia_use_system_freetype2=false',
-    'skia_use_system_harfbuzz=false',
-    'skia_pdf_subset_harfbuzz=true',
-    'skia_use_system_icu=false',
-    'skia_enable_skottie=true'
+    'skia_use_system_icu=false'
   ]
 
   if isMacos or isIos or isTvos:
@@ -102,7 +99,11 @@ def main():
       'skia_enable_gpu=true',
       'skia_use_freetype=true',
       'is_trivial_abi=false',
-      'skia_use_cfi=true'
+      'skia_use_cfi=true',
+      'use_rtti=true',
+      'use_lto=true',
+      'skia_use_harfbuzz=true',
+      'is_official_build=false'
     ]
   elif 'wasm' == target:
     # brew install emscripten binaryen llvm nodejs
