@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 env:
-  version: m132-a00c390e98-3
+  version: m132-a00c390e98-4
 
 jobs:
   linux-android:
@@ -24,8 +24,8 @@ jobs:
     container: ubuntu:20.04
     strategy:
       matrix:
-        build_type: [ Debug, Release ]
-        machine: ["x64", "arm64"]
+        build_type: [ Debug ]
+        machine: ["arm64"]
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
