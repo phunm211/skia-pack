@@ -23,7 +23,7 @@ def main():
   if build_type == 'Debug':
     args = ['is_debug=true']
   else:
-    args = ['is_official_build=false']
+    args = ['']
 
   args += [
     'target_cpu="' + machine + '"',
@@ -51,7 +51,7 @@ def main():
       'use_rtti=true',
       'use_lto=true',
       'skia_use_harfbuzz=true',
-      'is_official_build=false'
+      'is_official_build=false',
       'skia_use_fontmgr_custom=true',
       'skia_enable_pdf=false',
       'skia_enable_skottie=false',
