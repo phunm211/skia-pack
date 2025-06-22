@@ -28,6 +28,8 @@ def main():
   args += [
     'target_cpu="' + machine + '"',
     'skia_use_system_expat=false',
+    'skia_use_wuffs = false',
+    'skia_use_libheif = false',
     'skia_use_system_libjpeg_turbo=false',
     'skia_use_system_libpng=false',
     'skia_use_system_libwebp=false',
@@ -50,6 +52,19 @@ def main():
       'use_lto=true',
       'skia_use_harfbuzz=true',
       'is_official_build=false'
+      'skia_use_fontmgr_custom=true',
+      'skia_enable_pdf=false',
+      'skia_enable_skottie=false',
+      'skia_enable_svg=false',
+      'skia_enable_particles=false',
+      'skia_enable_sksl=false',
+      'skia_use_dng_sdk=false',
+      'skia_use_sfntly=false',
+      'skia_enable_gpu_debug_layers=false',
+      'skia_use_libjpeg_turbo_encode=false',
+      'skia_use_libpng_encode=false',
+      'skia_use_libwebp_encode=false',
+      'skia_use_libwebp_decode=false'
     ]
 
   if 'linux' == host and 'arm64' == host_machine:
