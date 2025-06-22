@@ -28,8 +28,8 @@ def main():
   args += [
     'target_cpu="' + machine + '"',
     'skia_use_system_expat=false',
-    'skia_use_wuffs = false',
-    'skia_use_libheif = false',
+    'skia_use_wuffs=false',
+    'skia_use_libheif=false',
     'skia_use_system_libjpeg_turbo=false',
     'skia_use_system_libpng=false',
     'skia_use_system_libwebp=false',
